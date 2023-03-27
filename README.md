@@ -1,8 +1,8 @@
-# QDVMC
-Quantum Distance-based Variational Multiclass Classifier (QDVMC)
+# qVDCC
+quantum Variational Distance-Based Centroid Classifier (qVDCC)
 
-## Train the QDVMC
-Perform the training procedure of QDVMC, searching for the best hyperparameters setting using [**Optuna**](https://optuna.org/) in each dataset.
+## Train the qVDCC
+Perform the training procedure of qVDCC, searching for the best hyperparameters setting using [**Optuna**](https://optuna.org/) in each dataset.
 
     python3 train_pennylane.py
 
@@ -22,7 +22,7 @@ After perform a data analysis to choose the best hyperparameters setting and per
 - `cross_validation.csv`: table with the results fo the cross validation of each algorithms models. This file if the output of `cross_validation.py`.
 
 ## Run on IBMQuantum Experience
-Run the best trained model using [**Wine**](https://archive.ics.uci.edu/ml/datasets/Wine) dataset on a provider in IBMQ Experience to validate the QDVMC algorithm on real devices. This command run the inference and fine tuning the model in a real quantum device.
+Run the best trained model using [**Wine**](https://archive.ics.uci.edu/ml/datasets/Wine) dataset on a provider in IBMQ Experience to validate the qVDCC algorithm on real devices. This command run the inference and fine tuning the model in a real quantum device.
 
     python3 run_qiskit.py [provider_name]
 
